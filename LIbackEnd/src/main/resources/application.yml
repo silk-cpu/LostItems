@@ -1,0 +1,12 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: LostItemsBackend
+  datasource:
+    url: jdbc:mysql://localhost:3306/item
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
