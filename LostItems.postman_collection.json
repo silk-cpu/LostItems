@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "5bb0fb1a-ef86-4632-9f06-82222886d9e5",
+		"name": "LostItems",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43012451"
+	},
+	"item": [
+		{
+			"name": "GetLostItems",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PostLostItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"tat\",\r\n    \"description\": \"tat\",\r\n    \"lost_date\": \"2025-04-14\",\r\n    \"location\": \"atta\",\r\n    \"found\": true,\r\n    \"found_date\": \"2025-04-14\",\r\n    \"found_location\": \"tat\",\r\n    \"note\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/lost_items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"lost_items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutLostItems",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"found\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/lost_items/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"lost_items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
